@@ -4,7 +4,8 @@ We live in a time when video games are extremely popular. The global video game 
  We chose this dataset to gain insights on the popularity of different gaming platforms and the most successful genres associated with those platforms.
 <br>
 <br>
- <p style='font-size:bold'></p>Students names: </p>p><br>
+ <p style='font-size:bold'>Students names:</p>
+ <br>
  Aljawhara Aldhayan - 443200433<br>
  Ghala Mohammed Alotaibi -443200405<br>
  Lama Alenzi - 443200881<br>
