@@ -3,7 +3,7 @@ Project motivations: We live in a time when video games are extremely popular. T
  We chose this dataset to gain insights on the popularity of different gaming platforms and the most successful genres associated with those platforms.
 
  Students names:
- Aljawhara Aldhayan - 443200433
- Ghala Mohammed Alotaibi -443200405
- Lama Alenzi - 443200881
+ Aljawhara Aldhayan - 443200433,
+ Ghala Mohammed Alotaibi -443200405,
+ Lama Alenzi - 443200881,
  Duna Alabdulaziz - 443200258
