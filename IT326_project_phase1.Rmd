@@ -1,0 +1,73 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+Description:
+
+This dataset  has 15 attributes and 1730 objects and along with each game title we will have a rank based on the game category and the total number of user ratings and the price of the game.
+It shows the user installs numbers and the growth for 30 and 60 days 
+and it provides a valuable resource for exploring the popularity of gaming and genres the top video games in android industry.
+It enables us to analyze the platforms that are influencing worldwide sales, 
+and gives us a variety of 100 game for each game category.
+
+Goal:
+
+Our goal  from studying this dataset is to utilize classification and clustering techniques on the input data to make predictions about the popularity of upcoming games.
+
+Dataset link:…………..
+
+
+Attributes discerption: 
+
+Rank (Nominal): Ranking of the game based on the category.
+
+Title (Nominal): The title of the game.
+
+Total ratings (Numeric, Ratio-scaled): The total of ratings received.
+
+Installs (Numeric, Ratio-scaled) : Estimated milestone for installation.
+
+Average rating : average of a 5-star rating
+
+4 star rating (Numeric, interval): total number of 4 star ratings.
+
+3 star rating (Numeric, interval): total number of 3 star .
+2 star rating (Numeric, interval): total number of 2 star rating.
+1 star rating (Numeric, interval) : total number of 1 star rating.
+Paid (Binary): does the game require payment? (False:No, True:Yes)
+
+5 Star rating (Numeric,interval):Number of 5star rating.
+
+category (Nominal):Game Category.
+
+price(Numeric, ratio):Game's price in the dollar.
+
+
+growth(60)(numeric, ratio): percent growth in 60 days.
+
+growth(30)(numeric,ratio): percent growth in 30 days.
+
+Class label:
+
+We want to predict the popularity of upcoming games based on the category and total ratings.
+
+Dataset<-read.csv("android-games.csv")
+options(max.print=9999999)
+View(Dataset)
+print(Dataset)
+str(Dataset)
