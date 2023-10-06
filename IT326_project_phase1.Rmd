@@ -86,7 +86,7 @@ Goal:
 
 Our goal  from studying this dataset is to utilize classification and clustering techniques on the input data to make predictions about the popularity of upcoming games.
 
-Dataset link:…………..
+Dataset link: https://www.kaggle.com/datasets/thedevastator/global-video-game-sales 
 
 
 Attributes discerption: 
