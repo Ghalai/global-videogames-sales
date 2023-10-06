@@ -1,5 +1,57 @@
 #import dataset
 dataset=read.csv("vgsales.csv")
+#libraries
+library(outliers) 
+library(dplyr)
+library(Hmisc)
+library(ggplot2)
+library(cowplot)
+library(mlbench)
+library(caret)
+library(faux)
+library(DataExplorer)
+library(randomForest)
+options(max.print=9999999)
+
+#dataset info
+dim(dataset)
+names(dataset)
+
+#dataset structure
+str(dataset)
+
+#sample of raw dataset(first 10 rows)
+head(dataset, 10)
+
+#sample of raw dataset(last 10 rows)
+tail(dataset, 10)
+
+#summary of dataset
+summary(dataset)
+
+#variance of numeric data
+var(dataset$NA_Sales)
+var(dataset$EU_Sales)
+var(dataset$JP_Sales)
+var(dataset$Other_Sales)
+var(dataset$Global_Sales)
+
+#platform pie chart(Duna)
+
+#Popular genres 
+dataset$Genre %>% table() %>% barplot() 
+
+#coloring barplot 
+tab<-dataset$Genre %>% table() 
+
+precentages<-tab %>% prop.table() %>% round(3)*100 
+
+txt<-paste0(names(tab), '\n',precentages,'%') 
+
+bb <- dataset$Genre %>% table() %>% barplot(axisnames=F,main='Genre',ylab='count',col=c('pink','blue','lightblue','green','lightgreen','red','orange','red','grey','yellow','azure','olivedrab')) 
+
+text(bb,tab/2,labels=txt,cex=1.5) 
+
 
 
 
